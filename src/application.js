@@ -5,7 +5,7 @@ import Signup from './Signup';
 import Login from './Login';
 import Dashboard from './Dashboard';
 import ProtectedRoute from './ProtectedRoute';
-import SharedNote from './SharedNote'; // ✅ Import the shared note component
+import SharedNote from './SharedNote'; // Import the shared note component
 
 function Application() {
   return (
@@ -15,7 +15,7 @@ function Application() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
 
-        {/* 🔒 Protected route for logged-in users */}
+        {/*Protected route for logged-in users */}
         <Route
           path="/dashboard"
           element={
